@@ -1,57 +1,37 @@
 import React from 'react';
 
-export default function MetricCard({ title, value, delta, subtitle, icon: Icon, color = 'blue' }) {
-  const colorMap = {
-    blue: {
-      bg: 'from-blue-500/10 to-indigo-500/5',
-      border: 'border-blue-500/20 hover:border-blue-500/40',
-      iconBg: 'bg-blue-500/10 text-blue-400',
-      badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20'
-    },
-    emerald: {
-      bg: 'from-emerald-500/10 to-teal-500/5',
-      border: 'border-emerald-500/20 hover:border-emerald-500/40',
-      iconBg: 'bg-emerald-500/10 text-emerald-400',
-      badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20'
-    },
-    purple: {
-      bg: 'from-purple-500/10 to-violet-500/5',
-      border: 'border-purple-500/20 hover:border-purple-500/40',
-      iconBg: 'bg-purple-500/10 text-purple-400',
-      badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20'
-    },
-    amber: {
-      bg: 'from-amber-500/10 to-orange-500/5',
-      border: 'border-amber-500/20 hover:border-amber-500/40',
-      iconBg: 'bg-amber-500/10 text-amber-400',
-      badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20'
-    }
+export default function MetricCard({ title, value, delta, subtitle, icon: Icon, tone = 'default' }) {
+  const toneClasses = {
+    default: 'text-slate-100',
+    emerald: 'text-emerald-400',
+    sky: 'text-sky-400',
+    amber: 'text-amber-400',
+    rose: 'text-rose-400'
   };
 
-  const c = colorMap[color] || colorMap.blue;
-
   return (
-    <div className={`relative overflow-hidden rounded-xl bg-gradient-to-br ${c.bg} bg-slate-900/60 backdrop-blur-sm border ${c.border} p-5 transition-all duration-200 hover:shadow-lg hover:shadow-slate-950/50`}>
-      <div className="flex items-start justify-between">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">{title}</p>
-          <div className="mt-2 flex items-baseline gap-2">
-            <span className="text-3xl font-extrabold tracking-tight text-white">{value}</span>
-            {delta && (
-              <span className={`inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full border ${c.badge}`}>
-                {delta}
-              </span>
-            )}
-          </div>
-          {subtitle && <p className="mt-1 text-xs text-slate-400">{subtitle}</p>}
-        </div>
-        {Icon && (
-          <div className={`p-2.5 rounded-lg ${c.iconBg}`}>
-            <Icon className="w-5 h-5" />
-          </div>
+    <div className="bg-slate-900/90 border border-slate-800 rounded-lg p-4 transition-colors hover:border-slate-700">
+      <div className="flex items-center justify-between text-xs text-slate-400 mb-2">
+        <span className="font-medium tracking-wide uppercase text-[11px] text-slate-400">{title}</span>
+        {Icon && <Icon className="w-4 h-4 text-slate-500" />}
+      </div>
+
+      <div className="flex items-baseline gap-2">
+        <span className={`text-2xl font-semibold font-mono tracking-tight ${toneClasses[tone] || toneClasses.default}`}>
+          {value}
+        </span>
+        {delta && (
+          <span className="text-[11px] font-mono font-medium text-emerald-400 bg-emerald-950/40 border border-emerald-800/60 px-1.5 py-0.2 rounded">
+            {delta}
+          </span>
         )}
       </div>
+
+      {subtitle && (
+        <p className="mt-1.5 text-xs text-slate-400 leading-relaxed truncate">
+          {subtitle}
+        </p>
+      )}
     </div>
   );
 }
-

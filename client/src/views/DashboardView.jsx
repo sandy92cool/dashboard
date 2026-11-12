@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Users,
-  CheckCircle2,
   TrendingUp,
   AlertCircle,
-  Clock,
-  Sparkles,
   MapPin,
-  Calendar,
   Layers,
-  ArrowUpRight
+  ArrowUpRight,
+  ShieldAlert,
+  ChevronRight,
+  Sparkles
 } from 'lucide-react';
 import { apiClient } from '../api/client.js';
-import MetricCard from '../components/MetricCard.jsx';
 import StatusBadge from '../components/StatusBadge.jsx';
 import CalendarFilter from '../components/CalendarFilter.jsx';
+import KpiLedgerStrip from '../components/KpiLedgerStrip.jsx';
 
 export default function DashboardView() {
-  // Default to 1 month window (2026-09-28 to 2026-10-28)
+  // Default 1 month window (2026-09-28 to 2026-10-28)
   const [startDate, setStartDate] = useState('2026-09-28');
   const [endDate, setEndDate] = useState('2026-10-28');
   const [loading, setLoading] = useState(true);
@@ -66,301 +64,408 @@ export default function DashboardView() {
 
   const activeProductData = products.find(p => p.productCode === selectedProduct) || products[0];
 
+  const statusItems = [
+    { key: 'APP_SUBMITTED', label: 'Submitted', count: statusDistribution.APP_SUBMITTED || 0, barColor: '#059669', badgeBg: 'bg-emerald-50 text-emerald-800' },
+    { key: 'JOURNEY_ACTIVE', label: 'Active', count: statusDistribution.JOURNEY_ACTIVE || 0, barColor: '#0284C7', badgeBg: 'bg-sky-50 text-sky-800' },
+    { key: 'JORUNEY_COMPLETE', label: 'Completed', count: statusDistribution.JORUNEY_COMPLETE || 0, barColor: '#4F46E5', badgeBg: 'bg-indigo-50 text-indigo-800' },
+    { key: 'OFFER_EXPIRED', label: 'Expired', count: statusDistribution.OFFER_EXPIRED || 0, barColor: '#D97706', badgeBg: 'bg-amber-50 text-amber-800' },
+    { key: 'USER_DROPPED', label: 'Dropped', count: statusDistribution.USER_DROPPED || 0, barColor: '#DC2626', badgeBg: 'bg-rose-50 text-rose-800' }
+  ];
+
+  const maxStatusCount = Math.max(...statusItems.map(s => s.count), 1);
+
+  // Trending Gauge Calculations
+  const trendingConvRate = trending ? trending.submissionRate : 0;
+  const radius = 42;
+  const circumference = 2 * Math.PI * radius;
+  const strokeDashoffset = circumference - (trendingConvRate / 100) * circumference;
+
   return (
     <div className="space-y-6">
-      {/* Header & Date Range Filter */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      {/* Top Action Bar */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-200">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-            📊 Dashboard
+          <h1 className="text-xl font-bold tracking-tight text-slate-900">
+            Portfolio Overview &amp; Conversion Ledger
           </h1>
-          <p className="text-xs text-slate-400 mt-1">
-            Live portfolio conversion, application submissions, and demographic distribution
+          <p className="text-xs text-slate-500 mt-0.5">
+            Operational pipeline tracking, demographic demand matrix, and product velocity
           </p>
         </div>
+
+        {/* Date Filter Integrated at top */}
+        <CalendarFilter
+          startDate={startDate}
+          endDate={endDate}
+          onChange={(start, end) => {
+            setStartDate(start);
+            setEndDate(end);
+          }}
+        />
       </div>
 
-      {/* Calendar Date Filter */}
-      <CalendarFilter
-        startDate={startDate}
-        endDate={endDate}
-        onChange={(start, end) => {
-          setStartDate(start);
-          setEndDate(end);
-        }}
-      />
-
       {error && (
-        <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 text-sm flex items-center gap-2">
-          <AlertCircle className="w-4 h-4 shrink-0" />
+        <div className="p-3.5 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 text-xs flex items-center gap-2">
+          <AlertCircle className="w-4 h-4 shrink-0 text-rose-600" />
           <span>{error}</span>
         </div>
       )}
 
       {loading ? (
-        <div className="flex items-center justify-center h-64">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-500" />
+        <div className="flex flex-col items-center justify-center h-72 border border-slate-200 rounded-xl bg-white shadow-2xs">
+          <div className="w-6 h-6 border-2 border-slate-200 border-t-blue-600 rounded-full animate-spin" />
+          <span className="text-xs text-slate-400 mt-3 font-mono">Aggregating portfolio records...</span>
         </div>
       ) : (
         <>
-          {/* Key Business Metrics */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <MetricCard
-              title="Total Logins Happened"
-              value={kpis.totalLogins.toLocaleString()}
-              subtitle="Unique quote sessions initiated"
-              icon={Users}
-              color="blue"
-            />
-            <MetricCard
-              title="Application Submissions"
-              value={kpis.totalSubmissions.toLocaleString()}
-              delta={`${kpis.conversionRate}% conversion`}
-              subtitle={`Among ${kpis.totalLogins} total customer logins`}
-              icon={CheckCircle2}
-              color="emerald"
-            />
-            <MetricCard
-              title="Active Applications"
-              value={kpis.activeApplications.toLocaleString()}
-              subtitle="Currently in progress"
-              icon={Clock}
-              color="purple"
-            />
-            <MetricCard
-              title="User Drop-Offs"
-              value={kpis.droppedApplications.toLocaleString()}
-              subtitle="Dropped or expired offers"
-              icon={AlertCircle}
-              color="amber"
-            />
-          </div>
+          {/* 1. Unified KPI Ledger Strip */}
+          <KpiLedgerStrip kpis={kpis} />
 
-          {/* Section: Different status and their counts */}
-          <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-5">
-            <div className="flex items-center justify-between mb-4">
+          {/* 2. Middle Row: Pipeline Funnel vs Trending Spotlight Gauge */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            {/* Left 7 cols: Status Pipeline Distribution (SVG Horizontal Bars) */}
+            <div className="lg:col-span-7 bg-white border border-slate-200 rounded-xl p-5 shadow-2xs flex flex-col justify-between">
               <div>
-                <h2 className="text-base font-semibold text-white">Different status and their counts</h2>
-                <p className="text-xs text-slate-400">Application journey records categorized by production status</p>
+                <div className="flex items-center justify-between mb-1">
+                  <h2 className="text-sm font-bold text-slate-900">
+                    Different status and their counts
+                  </h2>
+                  <span className="text-xs font-mono font-medium text-slate-500 bg-slate-50 px-2 py-0.5 rounded border border-slate-200">
+                    {kpis.totalApplications} JOURNEYS RECORDED
+                  </span>
+                </div>
+                <p className="text-xs text-slate-500 mb-5">
+                  Categorization of insurance journeys across operational stages
+                </p>
+
+                {/* SVG Visual Horizontal Bar Graph */}
+                <div className="space-y-3.5">
+                  {statusItems.map(item => {
+                    const pctOfTotal = kpis.totalApplications > 0
+                      ? ((item.count / kpis.totalApplications) * 100).toFixed(1)
+                      : '0.0';
+                    const barWidthPct = Math.round((item.count / maxStatusCount) * 100);
+
+                    return (
+                      <div key={item.key} className="space-y-1">
+                        <div className="flex items-center justify-between text-xs">
+                          <div className="flex items-center gap-2">
+                            <span className="font-medium text-slate-700 w-28 truncate">{item.label}</span>
+                            <span className="font-mono text-[11px] text-slate-400">{item.key}</span>
+                          </div>
+                          <div className="flex items-center gap-2 font-mono">
+                            <span className="font-semibold text-slate-900">{item.count}</span>
+                            <span className="text-slate-400 text-[11px]">({pctOfTotal}%)</span>
+                          </div>
+                        </div>
+
+                        {/* High precision SVG bar */}
+                        <div className="w-full bg-slate-100 h-2.5 rounded-xs overflow-hidden">
+                          <div
+                            className="h-full rounded-xs transition-all duration-500"
+                            style={{
+                              width: `${barWidthPct}%`,
+                              backgroundColor: item.barColor
+                            }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <span className="text-xs font-semibold text-slate-300 bg-slate-800/80 px-2.5 py-1 rounded-lg border border-slate-700/60">
-                Total: {kpis.totalApplications} Records
-              </span>
+
+              {/* Status Footer Metrics Strip */}
+              <div className="mt-5 pt-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+                <div>
+                  <div className="text-[11px] text-slate-500">Submission Yield</div>
+                  <div className="text-sm font-semibold font-mono text-emerald-700 mt-0.5">
+                    {kpis.totalApplications > 0 ? Math.round(((statusDistribution.APP_SUBMITTED || 0) / kpis.totalApplications) * 100) : 0}%
+                  </div>
+                </div>
+                <div className="border-x border-slate-100">
+                  <div className="text-[11px] text-slate-500">Active Pipeline</div>
+                  <div className="text-sm font-semibold font-mono text-sky-700 mt-0.5">
+                    {kpis.totalApplications > 0 ? Math.round(((statusDistribution.JOURNEY_ACTIVE || 0) / kpis.totalApplications) * 100) : 0}%
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[11px] text-slate-500">Drop-off Friction</div>
+                  <div className="text-sm font-semibold font-mono text-rose-700 mt-0.5">
+                    {kpis.totalApplications > 0 ? Math.round(((statusDistribution.USER_DROPPED || 0) / kpis.totalApplications) * 100) : 0}%
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-              {[
-                { status: 'APP_SUBMITTED', count: statusDistribution.APP_SUBMITTED || 0, label: 'Submitted' },
-                { status: 'JOURNEY_ACTIVE', count: statusDistribution.JOURNEY_ACTIVE || 0, label: 'Active' },
-                { status: 'JORUNEY_COMPLETE', count: statusDistribution.JORUNEY_COMPLETE || 0, label: 'Completed' },
-                { status: 'OFFER_EXPIRED', count: statusDistribution.OFFER_EXPIRED || 0, label: 'Offer Expired' },
-                { status: 'USER_DROPPED', count: statusDistribution.USER_DROPPED || 0, label: 'Dropped' }
-              ].map(item => {
-                const pct = kpis.totalApplications > 0
-                  ? Math.round((item.count / kpis.totalApplications) * 100)
-                  : 0;
-
-                return (
-                  <div key={item.status} className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-3.5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between">
-                      <StatusBadge status={item.status} />
-                      <span className="text-xs text-slate-500 font-medium">{pct}%</span>
+            {/* Right 5 cols: Trending Product Circular Gauge Spotlight */}
+            {trending && (
+              <div className="lg:col-span-5 bg-white border border-slate-200 rounded-xl p-5 shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-blue-700">
+                      <TrendingUp className="w-4 h-4" /> Trending Product
                     </div>
-                    <div className="mt-3">
-                      <span className="text-2xl font-bold text-white">{item.count}</span>
-                      <div className="w-full bg-slate-800 h-1 rounded-full mt-2 overflow-hidden">
-                        <div
-                          className="bg-indigo-500 h-full rounded-full transition-all duration-500"
-                          style={{ width: `${pct}%` }}
+                    <span className="text-[11px] font-mono font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                      RANK #1
+                    </span>
+                  </div>
+
+                  <div className="mt-4">
+                    <h3 className="text-lg font-bold text-slate-900 leading-snug">
+                      {trending.name}
+                    </h3>
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="font-mono text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                        {trending.productCode}
+                      </span>
+                      <span className="text-xs text-slate-500">Lead Volume Generator</span>
+                    </div>
+                  </div>
+
+                  {/* SVG Radial Gauge */}
+                  <div className="my-5 flex items-center justify-center gap-6">
+                    <div className="relative w-28 h-28 flex items-center justify-center">
+                      <svg className="w-28 h-28 transform -rotate-90">
+                        <circle
+                          cx="56"
+                          cy="56"
+                          r={radius}
+                          stroke="#E2E8F0"
+                          strokeWidth="8"
+                          fill="transparent"
                         />
+                        <circle
+                          cx="56"
+                          cy="56"
+                          r={radius}
+                          stroke="#059669"
+                          strokeWidth="8"
+                          fill="transparent"
+                          strokeDasharray={circumference}
+                          strokeDashoffset={strokeDashoffset}
+                          strokeLinecap="round"
+                          className="transition-all duration-1000 ease-out"
+                        />
+                      </svg>
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                        <span className="text-xl font-bold font-mono text-slate-900">
+                          {trending.submissionRate}%
+                        </span>
+                        <span className="text-[9px] font-mono text-slate-400 uppercase tracking-tight">
+                          SUBMIT RATE
+                        </span>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
 
-          {/* Trending Product & Product Performance */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-            {/* Trending Product Card */}
-            {trending && (
-              <div className="rounded-xl bg-gradient-to-br from-indigo-900/40 via-slate-900/70 to-slate-900/60 border border-indigo-500/30 p-5 flex flex-col justify-between relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none" />
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
-                      <Sparkles className="w-3.5 h-3.5 text-indigo-400" /> Trending Product
-                    </span>
-                    <span className="text-xs text-slate-400">#1 Top Velocity</span>
-                  </div>
-
-                  <h3 className="text-xl font-bold text-white mt-3">{trending.name}</h3>
-                  <p className="text-xs text-indigo-300 font-mono mt-0.5">{trending.productCode}</p>
-
-                  <div className="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-slate-800/80">
-                    <div className="bg-slate-950/40 p-2.5 rounded-lg border border-slate-800/60">
-                      <span className="text-[11px] text-slate-400 block">Total Applications</span>
-                      <span className="text-lg font-bold text-white">{trending.totalApplications}</span>
-                    </div>
-                    <div className="bg-slate-950/40 p-2.5 rounded-lg border border-slate-800/60">
-                      <span className="text-[11px] text-slate-400 block">Submissions</span>
-                      <span className="text-lg font-bold text-emerald-400">{trending.submissions}</span>
+                    <div className="space-y-3">
+                      <div className="bg-slate-50 border border-slate-200/80 rounded-lg p-2.5 w-36">
+                        <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Total Inceptions</span>
+                        <span className="text-base font-bold font-mono text-slate-900">{trending.totalApplications}</span>
+                      </div>
+                      <div className="bg-emerald-50/50 border border-emerald-200/80 rounded-lg p-2.5 w-36">
+                        <span className="text-[10px] text-emerald-700 uppercase tracking-wider block">Submitted</span>
+                        <span className="text-base font-bold font-mono text-emerald-700">{trending.submissions}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                  <span className="text-slate-400">Submission Conversion:</span>
-                  <span className="font-bold text-emerald-400">{trending.submissionRate}%</span>
+                <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                  <span>Product conversion performance is <b>above portfolio average</b></span>
+                  <ArrowUpRight className="w-4 h-4 text-emerald-600 shrink-0" />
                 </div>
               </div>
             )}
-
-            {/* Product Applications Comparison */}
-            <div className={`rounded-xl bg-slate-900/60 border border-slate-800 p-5 ${trending ? 'lg:col-span-2' : 'lg:col-span-3'}`}>
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="text-sm font-semibold text-white">Application Submissions Created per Product</h3>
-                <span className="text-xs text-slate-400">Click a product to inspect demographics</span>
-              </div>
-
-              <div className="space-y-2.5">
-                {products.slice(0, 5).map(prod => {
-                  const isSelected = selectedProduct === prod.productCode;
-                  const maxApps = Math.max(...products.map(p => p.totalApplications), 1);
-                  const widthPct = Math.round((prod.totalApplications / maxApps) * 100);
-
-                  return (
-                    <div
-                      key={prod.productCode}
-                      onClick={() => setSelectedProduct(prod.productCode)}
-                      className={`p-3 rounded-lg border cursor-pointer transition-all ${
-                        isSelected
-                          ? 'bg-indigo-950/30 border-indigo-500/50 shadow-sm shadow-indigo-500/20'
-                          : 'bg-slate-950/40 border-slate-800/60 hover:border-slate-700'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between text-xs mb-1.5">
-                        <div className="flex items-center gap-2">
-                          <span className="font-semibold text-white">{prod.name}</span>
-                          <span className="text-slate-400 font-mono text-[11px]">({prod.productCode})</span>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <span className="text-slate-400">{prod.totalApplications} apps</span>
-                          <span className="font-semibold text-emerald-400">{prod.submissions} submitted</span>
-                        </div>
-                      </div>
-                      <div className="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden flex">
-                        <div
-                          className="bg-emerald-500 h-full rounded-l-full"
-                          style={{ width: `${(prod.submissions / prod.totalApplications) * widthPct}%` }}
-                        />
-                        <div
-                          className="bg-indigo-500/60 h-full rounded-r-full"
-                          style={{ width: `${((prod.totalApplications - prod.submissions) / prod.totalApplications) * widthPct}%` }}
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
           </div>
 
-          {/* Demographic Breakdown for Selected Product */}
-          {activeProductData && (
-            <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-5">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4 pb-3 border-b border-slate-800">
-                <div>
-                  <h3 className="text-sm font-semibold text-white flex items-center gap-2">
-                    <Layers className="w-4 h-4 text-indigo-400" />
-                    Demographic Demand Deep-Dive: <span className="text-indigo-400 font-bold">{activeProductData.name} ({activeProductData.productCode})</span>
-                  </h3>
-                  <p className="text-xs text-slate-400 mt-0.5">Which age groups are buying and which locations have highest demand</p>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <label className="text-xs text-slate-400">Select Product:</label>
-                  <select
-                    value={selectedProduct}
-                    onChange={(e) => setSelectedProduct(e.target.value)}
-                    className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-200 focus:outline-none focus:border-indigo-500"
-                  >
-                    {products.map(p => (
-                      <option key={p.productCode} value={p.productCode}>
-                        {p.name} ({p.productCode})
-                      </option>
-                    ))}
-                  </select>
-                </div>
+          {/* 3. Bottom Row: High-Density Product Matrix vs Demographic Cohort Matrix */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            {/* Left 7 cols: Enterprise League Table */}
+            <div className="lg:col-span-7 bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="text-sm font-bold text-slate-900">
+                  Application Submissions Created per Product
+                </h3>
+                <span className="text-xs text-slate-400">Click row to inspect cohort</span>
               </div>
+              <p className="text-xs text-slate-500 mb-4">
+                Comparison of volume, category classification, and conversion yield across plans
+              </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Age Group Distribution */}
-                <div>
-                  <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">
-                    🎂 Age Group Seeking This Product
-                  </h4>
-                  <div className="space-y-2">
-                    {Object.entries(activeProductData.ageGroups || {}).map(([group, count]) => {
-                      const total = Object.values(activeProductData.ageGroups).reduce((a, b) => a + b, 0) || 1;
-                      const pct = Math.round((count / total) * 100);
+              <div className="overflow-x-auto border border-slate-200 rounded-lg">
+                <table className="w-full text-left text-xs">
+                  <thead className="bg-slate-50 text-[11px] font-mono uppercase text-slate-600 border-b border-slate-200">
+                    <tr>
+                      <th className="py-2.5 px-3">Plan Description</th>
+                      <th className="py-2.5 px-2">Category</th>
+                      <th className="py-2.5 px-2 text-right">Inceptions</th>
+                      <th className="py-2.5 px-2 text-right">Submissions</th>
+                      <th className="py-2.5 px-3 text-right">Yield %</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {products.map(prod => {
+                      const isSelected = selectedProduct === prod.productCode;
+                      const convRate = prod.totalApplications > 0
+                        ? ((prod.submissions / prod.totalApplications) * 100).toFixed(1)
+                        : '0.0';
 
                       return (
-                        <div key={group} className="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-                          <div className="flex justify-between text-xs mb-1">
-                            <span className="font-medium text-slate-300">{group} Years</span>
-                            <span className="text-slate-400 font-semibold">{count} ({pct}%)</span>
-                          </div>
-                          <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                            <div
-                              className="bg-sky-500 h-full rounded-full transition-all duration-300"
-                              style={{ width: `${pct}%` }}
-                            />
-                          </div>
-                        </div>
+                        <tr
+                          key={prod.productCode}
+                          onClick={() => setSelectedProduct(prod.productCode)}
+                          className={`cursor-pointer transition-colors ${
+                            isSelected
+                              ? 'bg-blue-50/70 text-blue-900 font-medium'
+                              : 'hover:bg-slate-50 text-slate-700'
+                          }`}
+                        >
+                          <td className="py-3 px-3">
+                            <div className="flex items-center gap-2">
+                              <span
+                                className={`w-1.5 h-1.5 rounded-full ${
+                                  isSelected ? 'bg-blue-600' : 'bg-transparent'
+                                }`}
+                              />
+                              <div>
+                                <div className="font-semibold text-slate-900">{prod.name}</div>
+                                <div className="font-mono text-[11px] text-slate-500">{prod.productCode}</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td className="py-3 px-2">
+                            <span className="text-[11px] font-medium text-slate-600 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">
+                              {prod.category}
+                            </span>
+                          </td>
+                          <td className="py-3 px-2 text-right font-mono font-medium text-slate-900">
+                            {prod.totalApplications}
+                          </td>
+                          <td className="py-3 px-2 text-right font-mono font-bold text-emerald-700">
+                            {prod.submissions}
+                          </td>
+                          <td className="py-3 px-3 text-right font-mono">
+                            <div className="flex items-center justify-end gap-2">
+                              <div className="w-12 bg-slate-100 h-1.5 rounded-full overflow-hidden hidden sm:block">
+                                <div
+                                  className="bg-emerald-600 h-full rounded-full"
+                                  style={{ width: `${Math.min(parseFloat(convRate), 100)}%` }}
+                                />
+                              </div>
+                              <span className="font-semibold text-slate-900">{convRate}%</span>
+                            </div>
+                          </td>
+                        </tr>
                       );
                     })}
-                  </div>
-                </div>
-
-                {/* Highest Demand Locations */}
-                <div>
-                  <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">
-                    📍 Highest Seeking Locations for This Product
-                  </h4>
-                  <div className="space-y-2">
-                    {Object.entries(activeProductData.locations || {})
-                      .sort(([, a], [, b]) => b - a)
-                      .slice(0, 5)
-                      .map(([loc, count], idx) => {
-                        const total = Object.values(activeProductData.locations).reduce((a, b) => a + b, 0) || 1;
-                        const pct = Math.round((count / total) * 100);
-
-                        return (
-                          <div key={loc} className="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80 flex items-center justify-between">
-                            <div className="flex items-center gap-2">
-                              <span className="text-[11px] font-bold text-indigo-400 w-4">#{idx + 1}</span>
-                              <MapPin className="w-3.5 h-3.5 text-slate-500" />
-                              <span className="text-xs font-medium text-slate-200">{loc}</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <span className="text-xs text-slate-400">{count} applications</span>
-                              <span className="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                                {pct}%
-                              </span>
-                            </div>
-                          </div>
-                        );
-                      })}
-                  </div>
-                </div>
+                  </tbody>
+                </table>
               </div>
             </div>
-          )}
+
+            {/* Right 5 cols: Demographic & Geographic Radar */}
+            {activeProductData && (
+              <div className="lg:col-span-5 bg-white border border-slate-200 rounded-xl p-5 shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div className="flex items-center gap-2">
+                      <Layers className="w-4 h-4 text-slate-500" />
+                      <div>
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-800">
+                          Cohort Diagnostic
+                        </h3>
+                        <p className="text-[11px] text-slate-500">{activeProductData.name} ({activeProductData.productCode})</p>
+                      </div>
+                    </div>
+
+                    <select
+                      value={selectedProduct}
+                      onChange={(e) => setSelectedProduct(e.target.value)}
+                      className="bg-slate-50 border border-slate-200 rounded px-2 py-1 text-xs font-mono text-slate-700 focus:outline-none focus:border-blue-500"
+                    >
+                      {products.map(p => (
+                        <option key={p.productCode} value={p.productCode}>
+                          {p.productCode}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* SVG Vertical Age Column Chart */}
+                  <div className="mt-4">
+                    <h4 className="text-[11px] font-mono uppercase tracking-wider text-slate-600 font-semibold mb-3">
+                      Age Cohorts Seeking Coverage
+                    </h4>
+
+                    {/* SVG Column Bars */}
+                    {(() => {
+                      const ageEntries = Object.entries(activeProductData.ageGroups || {});
+                      const maxAgeVal = Math.max(...ageEntries.map(([, v]) => v), 1);
+
+                      return (
+                        <div className="grid grid-cols-5 gap-2 items-end h-28 pb-2 pt-4 px-1 bg-slate-50/70 border border-slate-200/60 rounded-lg">
+                          {ageEntries.map(([group, count]) => {
+                            const barHeight = Math.round((count / maxAgeVal) * 75);
+                            return (
+                              <div key={group} className="flex flex-col items-center justify-end h-full">
+                                <span className="text-[10px] font-mono text-slate-600 font-bold mb-1">{count}</span>
+                                <div
+                                  className="w-full bg-blue-600 rounded-t-xs transition-all duration-500 min-h-[4px]"
+                                  style={{ height: `${barHeight}px` }}
+                                />
+                                <span className="text-[10px] font-mono text-slate-500 mt-1.5 truncate max-w-full">
+                                  {group}
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      );
+                    })()}
+                  </div>
+
+                  {/* Top Demanding Locations List */}
+                  <div className="mt-5">
+                    <h4 className="text-[11px] font-mono uppercase tracking-wider text-slate-600 font-semibold mb-2">
+                      Top Demanding Geographies
+                    </h4>
+                    <div className="divide-y divide-slate-100 text-xs">
+                      {Object.entries(activeProductData.locations || {})
+                        .sort(([, a], [, b]) => b - a)
+                        .slice(0, 4)
+                        .map(([loc, count], idx) => {
+                          const totalLoc = Object.values(activeProductData.locations).reduce((a, b) => a + b, 0) || 1;
+                          const pct = Math.round((count / totalLoc) * 100);
+
+                          return (
+                            <div key={loc} className="py-2 flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <span className="text-[10px] font-mono text-slate-400 w-4">0{idx + 1}</span>
+                                <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                                <span className="font-medium text-slate-800">{loc}</span>
+                              </div>
+                              <div className="flex items-center gap-3 font-mono">
+                                <span className="text-slate-500">{count} apps</span>
+                                <span className="font-semibold text-emerald-700 bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-200">
+                                  {pct}%
+                                </span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 flex items-center justify-between">
+                  <span>Demographic skew aligns with CASA bank customer criteria</span>
+                </div>
+              </div>
+            )}
+          </div>
         </>
       )}
     </div>
   );
 }
-

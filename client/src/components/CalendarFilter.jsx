@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Filter, RotateCcw } from 'lucide-react';
+import { Calendar as CalendarIcon, RotateCcw } from 'lucide-react';
 
 export default function CalendarFilter({ startDate, endDate, onChange }) {
   const handlePreset = (days) => {
@@ -7,7 +7,7 @@ export default function CalendarFilter({ startDate, endDate, onChange }) {
       onChange('', '');
       return;
     }
-    const end = new Date(2026, 9, 28); // 2026-10-28 default max data anchor
+    const end = new Date(2026, 9, 28);
     const start = new Date(end);
     start.setDate(end.getDate() - days);
 
@@ -16,76 +16,78 @@ export default function CalendarFilter({ startDate, endDate, onChange }) {
   };
 
   const isOneMonthDefault = startDate === '2026-09-28' && endDate === '2026-10-28';
+  const isSevenDays = startDate === '2026-10-21' && endDate === '2026-10-28';
+  const isAllTime = !startDate && !endDate;
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-900/80 border border-slate-800 p-3 rounded-xl backdrop-blur-sm">
-      <div className="flex items-center gap-2">
-        <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-          <Calendar className="w-4 h-4" />
-        </div>
-        <div>
-          <span className="text-xs font-medium text-slate-400 block">Filter Period</span>
-          <span className="text-xs text-slate-200 font-semibold">
-            {startDate && endDate ? `${startDate} to ${endDate}` : 'All Recorded Dates'}
-          </span>
-        </div>
-      </div>
-
-      <div className="flex flex-wrap items-center gap-2">
-        {/* Quick Presets */}
+    <div className="flex flex-wrap items-center gap-2 text-xs">
+      {/* Preset pills */}
+      <div className="inline-flex rounded-md border border-slate-200 bg-slate-100 p-0.5">
         <button
+          type="button"
           onClick={() => handlePreset(30)}
-          className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+          className={`px-2.5 py-1 rounded text-[11px] font-medium transition-colors ${
             isOneMonthDefault
-              ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-600/30'
-              : 'bg-slate-800/80 text-slate-300 hover:bg-slate-800 hover:text-white'
+              ? 'bg-white text-slate-900 shadow-xs font-semibold'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
-          1 Month (Default)
+          30D
         </button>
         <button
+          type="button"
           onClick={() => handlePreset(7)}
-          className="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+          className={`px-2.5 py-1 rounded text-[11px] font-medium transition-colors ${
+            isSevenDays
+              ? 'bg-white text-slate-900 shadow-xs font-semibold'
+              : 'text-slate-600 hover:text-slate-900'
+          }`}
         >
-          Last 7 Days
+          7D
         </button>
         <button
+          type="button"
           onClick={() => handlePreset('all')}
-          className="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+          className={`px-2.5 py-1 rounded text-[11px] font-medium transition-colors ${
+            isAllTime
+              ? 'bg-white text-slate-900 shadow-xs font-semibold'
+              : 'text-slate-600 hover:text-slate-900'
+          }`}
         >
-          All Time
+          All
         </button>
-
-        <div className="h-4 w-px bg-slate-800 mx-1" />
-
-        {/* Date Inputs */}
-        <div className="flex items-center gap-1.5 text-xs text-slate-400">
-          <input
-            type="date"
-            value={startDate}
-            onChange={(e) => onChange(e.target.value, endDate)}
-            className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors"
-          />
-          <span>to</span>
-          <input
-            type="date"
-            value={endDate}
-            onChange={(e) => onChange(startDate, e.target.value)}
-            className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors"
-          />
-        </div>
-
-        {(startDate || endDate) && (
-          <button
-            onClick={() => handlePreset('all')}
-            title="Reset filter"
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
-          >
-            <RotateCcw className="w-3.5 h-3.5" />
-          </button>
-        )}
       </div>
+
+      {/* Date Pickers */}
+      <div className="flex items-center gap-1.5 bg-white border border-slate-200 rounded-md px-2.5 py-1 text-slate-700 shadow-2xs">
+        <CalendarIcon className="w-3.5 h-3.5 text-slate-400" />
+        <input
+          type="date"
+          value={startDate}
+          onChange={(e) => onChange(e.target.value, endDate)}
+          aria-label="Start Date"
+          className="bg-transparent border-0 font-mono text-[11px] text-slate-800 focus:outline-none p-0 cursor-pointer"
+        />
+        <span className="text-slate-400 font-mono">→</span>
+        <input
+          type="date"
+          value={endDate}
+          onChange={(e) => onChange(startDate, e.target.value)}
+          aria-label="End Date"
+          className="bg-transparent border-0 font-mono text-[11px] text-slate-800 focus:outline-none p-0 cursor-pointer"
+        />
+      </div>
+
+      {(startDate || endDate) && (
+        <button
+          type="button"
+          onClick={() => handlePreset('all')}
+          title="Reset date filter"
+          className="p-1.5 rounded-md border border-slate-200 bg-white text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-colors"
+        >
+          <RotateCcw className="w-3.5 h-3.5" />
+        </button>
+      )}
     </div>
   );
 }
-

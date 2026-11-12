@@ -1,73 +1,53 @@
 import React from 'react';
-import { CheckCircle2, Clock, AlertTriangle, XCircle, Sparkles } from 'lucide-react';
 
 const STATUS_CONFIG = {
   APP_SUBMITTED: {
     label: 'Submitted',
     fullLabel: 'Application Submitted',
-    bg: 'bg-emerald-500/10',
-    border: 'border-emerald-500/30',
-    text: 'text-emerald-400',
-    dot: 'bg-emerald-400',
-    icon: CheckCircle2
+    classes: 'bg-emerald-50 text-emerald-800 border-emerald-200/80',
+    dot: 'bg-emerald-600'
   },
   JOURNEY_ACTIVE: {
     label: 'Active',
     fullLabel: 'Journey Active',
-    bg: 'bg-sky-500/10',
-    border: 'border-sky-500/30',
-    text: 'text-sky-400',
-    dot: 'bg-sky-400',
-    icon: Clock
+    classes: 'bg-sky-50 text-sky-800 border-sky-200/80',
+    dot: 'bg-sky-600'
   },
   JORUNEY_COMPLETE: {
     label: 'Completed',
     fullLabel: 'Journey Complete',
-    bg: 'bg-violet-500/10',
-    border: 'border-violet-500/30',
-    text: 'text-violet-400',
-    dot: 'bg-violet-400',
-    icon: Sparkles
+    classes: 'bg-indigo-50 text-indigo-800 border-indigo-200/80',
+    dot: 'bg-indigo-600'
   },
   OFFER_EXPIRED: {
     label: 'Expired',
     fullLabel: 'Offer Expired',
-    bg: 'bg-amber-500/10',
-    border: 'border-amber-500/30',
-    text: 'text-amber-400',
-    dot: 'bg-amber-400',
-    icon: AlertTriangle
+    classes: 'bg-amber-50 text-amber-800 border-amber-200/80',
+    dot: 'bg-amber-600'
   },
   USER_DROPPED: {
     label: 'Dropped',
     fullLabel: 'User Dropped',
-    bg: 'bg-rose-500/10',
-    border: 'border-rose-500/30',
-    text: 'text-rose-400',
-    dot: 'bg-rose-400',
-    icon: XCircle
+    classes: 'bg-rose-50 text-rose-800 border-rose-200/80',
+    dot: 'bg-rose-600'
   }
 };
 
-export default function StatusBadge({ status, full = false, showDot = true }) {
+export default function StatusBadge({ status, full = false, showDot = true, size = 'md' }) {
   const clean = String(status || '').trim();
   const conf = STATUS_CONFIG[clean] || {
     label: clean || 'Unknown',
     fullLabel: clean || 'Unknown',
-    bg: 'bg-slate-500/10',
-    border: 'border-slate-500/30',
-    text: 'text-slate-400',
-    dot: 'bg-slate-400',
-    icon: Clock
+    classes: 'bg-slate-100 text-slate-700 border-slate-200',
+    dot: 'bg-slate-500'
   };
 
-  const Icon = conf.icon;
+  const pad = size === 'sm' ? 'px-2 py-0.5 text-[11px]' : 'px-2.5 py-0.5 text-xs';
 
   return (
-    <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${conf.bg} ${conf.border} ${conf.text}`}>
-      {showDot && <span className={`w-1.5 h-1.5 rounded-full ${conf.dot} animate-pulse`} />}
-      <span>{full ? conf.fullLabel : conf.label}</span>
+    <span className={`inline-flex items-center gap-1.5 rounded-md border font-medium ${pad} ${conf.classes}`}>
+      {showDot && <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${conf.dot}`} />}
+      <span className="font-mono">{full ? conf.fullLabel : conf.label}</span>
     </span>
   );
 }
-
