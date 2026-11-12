@@ -1,0 +1,24 @@
+{
+  "name": "insurance-analytics-platform",
+  "version": "2.0.0",
+  "description": "Enterprise-grade Insurance Analytics Platform (React + Node.js/Express)",
+  "type": "module",
+  "scripts": {
+    "start": "cd server && node src/server.js",
+    "dev:server": "cd server && node --watch src/server.js",
+    "dev:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build",
+    "test": "cd server && node --test test/*.test.js"
+  },
+  "keywords": [
+    "insurance",
+    "analytics",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Antigravity Senior Engineering Team",
+  "license": "ISC"
+}
+

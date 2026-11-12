@@ -1,0 +1,3862 @@
+[
+  {
+    "UserId": "Sdfesf",
+    "Dob": "1996-07-01 00:00:00",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Agent Code": "S46118",
+    "Ethnic Code": 2.0,
+    "C2PSN": "Profile does not meet the product criteria",
+    "Physical Medical Flag": "Yes",
+    "C2PL": "This cover is available only to HDFC Bank CASA customers with an account vintage of at least 6 months",
+    "GPP": "Profile does not meet the product criteria",
+    "SPP": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80",
+    "PGNP": "Profile does not meet the product criteria",
+    "SanchayPar": "Profile does not meet the product criteria",
+    "SanchayPlus": "Profile does not meet the product criteria",
+    "C2A": "Profile does not meet the product criteria",
+    "GWP": "Profile does not meet the product criteria",
+    "ESJ": "Profile does not meet the product criteria",
+    "SaralJeevan": "Profile does not meet the product criteria",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Profile does not meet the product criteria",
+    "ULSPRO": "Profile does not meet the product criteria",
+    "Created": "2026-10-26 00:00:00",
+    "Updated": "2026-10-27 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age": 30,
+    "Age_Group": "26-35",
+    "Phone No": "9820010001",
+    "mobile_number": "9820010001",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 14,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "C2PL",
+        "error": "This cover is available only to HDFC Bank CASA customers with an account vintage of at least 6 months"
+      },
+      {
+        "product": "GPP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SPP",
+        "error": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80"
+      },
+      {
+        "product": "PGNP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "C2A",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "GWP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "ESJ",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Profile does not meet the product criteria"
+      }
+    ]
+  },
+  {
+    "UserId": "Sdfsdf",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PL": "Income has a declining trend",
+    "Updated": "2026-10-27 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010002",
+    "mobile_number": "9820010002",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 1,
+    "ineligible_offers": [
+      {
+        "product": "C2PL",
+        "error": "Income has a declining trend"
+      }
+    ]
+  },
+  {
+    "UserId": "Fwgvre",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Customer has a negative pincode",
+    "C2PL": "Customer has been rated up in a previous policy",
+    "GPP": "Customer has been rated up in a previous policy",
+    "SPP": "Customer has been rated up in a previous policy",
+    "PGNP": "Customer has been rated up in a previous policy",
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Customer has a negative pincode",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Specified age is beyond limits",
+    "Updated": "2026-10-27 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010003",
+    "mobile_number": "9820010003",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 14,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2PL",
+        "error": "Customer has been rated up in a previous policy"
+      },
+      {
+        "product": "GPP",
+        "error": "Customer has been rated up in a previous policy"
+      },
+      {
+        "product": "SPP",
+        "error": "Customer has been rated up in a previous policy"
+      },
+      {
+        "product": "PGNP",
+        "error": "Customer has been rated up in a previous policy"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Specified age is beyond limits"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "Xpressway",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 97000,
+    "SPP": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80",
+    "PGNP": 17909,
+    "SanchayPar": 1770744,
+    "SanchayPlus": 2567579,
+    "C2A": 5502693,
+    "GWP": 2213430,
+    "ESJ": 834074,
+    "SaralJeevan": 1862399,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1549401,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Pune",
+    "City": "Pune",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010004",
+    "mobile_number": "9820010004",
+    "num_products_generated": 11,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 97000.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17909.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 1770744.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 2567579.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 5502693.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 2213430.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 834074.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 1862399.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1549401.0
+      }
+    ],
+    "num_ineligible_offers": 3,
+    "ineligible_offers": [
+      {
+        "product": "SPP",
+        "error": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Profile does not meet the product criteria",
+    "C2PL": "Annual income is insufficient",
+    "GPP": "Profile does not meet the product criteria",
+    "SPP": "Profile does not meet the product criteria",
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": "Profile does not meet the product criteria",
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": "Profile does not meet the product criteria",
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Profile does not meet the product criteria",
+    "ULSPRO": "Profile does not meet the product criteria",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Hyderabad",
+    "City": "Hyderabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010005",
+    "mobile_number": "9820010005",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 14,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "GPP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SPP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "C2A",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "ESJ",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Profile does not meet the product criteria"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_HBANK",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Chennai",
+    "City": "Chennai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010006",
+    "mobile_number": "9820010006",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 102817,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 400000,
+    "SanchayPlus": 630000,
+    "C2A": 350000,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 183050,
+    "SaralJeevan": 416452,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 350000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Ahmedabad",
+    "City": "Ahmedabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010007",
+    "mobile_number": "9820010007",
+    "num_products_generated": 10,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 102817.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 400000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 630000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 350000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 183050.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 416452.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 350000.0
+      }
+    ],
+    "num_ineligible_offers": 4,
+    "ineligible_offers": [
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_IOP_NBSC",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Kolkata",
+    "City": "Kolkata",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010008",
+    "mobile_number": "9820010008",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PL": "Previous adversity found in Dedupe",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010009",
+    "mobile_number": "9820010009",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 1,
+    "ineligible_offers": [
+      {
+        "product": "C2PL",
+        "error": "Previous adversity found in Dedupe"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Annual income is insufficient",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 257158,
+    "SPP": 150000,
+    "PGNP": "Frequency not allowed for this product",
+    "SanchayPar": "Annual income is insufficient",
+    "SanchayPlus": "Annual income is insufficient",
+    "C2A": "Annual income is insufficient",
+    "GWP": "Annual income is insufficient",
+    "ESJ": "Annual income is insufficient",
+    "SaralJeevan": "Annual income is insufficient",
+    "SANLP": "NFL is unavailable",
+    "C2APAR": "Annual income is insufficient",
+    "ULSPRO": "Annual income is insufficient",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010010",
+    "mobile_number": "9820010010",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 257158.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Frequency not allowed for this product"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2A",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "GWP",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ESJ",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SANLP",
+        "error": "NFL is unavailable"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Annual income is insufficient"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Previous adversity found in Dedupe",
+    "C2PL": "Previous adversity found in Dedupe",
+    "GPP": "Previous adversity found in Dedupe",
+    "SPP": "Previous adversity found in Dedupe",
+    "PGNP": "Previous adversity found in Dedupe",
+    "SanchayPar": "Previous adversity found in Dedupe",
+    "SanchayPlus": "Previous adversity found in Dedupe",
+    "C2A": "Previous adversity found in Dedupe",
+    "GWP": "Previous adversity found in Dedupe",
+    "ESJ": "Previous adversity found in Dedupe",
+    "SaralJeevan": "Previous adversity found in Dedupe",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Previous adversity found in Dedupe",
+    "ULSPRO": "Previous adversity found in Dedupe",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010011",
+    "mobile_number": "9820010011",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 14,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "C2PL",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "GPP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SPP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "PGNP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "C2A",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "GWP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "ESJ",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Previous adversity found in Dedupe"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": "Calculated pasa is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 97625,
+    "SPP": 150000,
+    "PGNP": 17008,
+    "SanchayPar": "Calculated pasa is above permissible value",
+    "SanchayPlus": "Calculated pasa is above permissible value",
+    "C2A": "There is an error in TEBT. Please try again!",
+    "GWP": "Calculated pasa is above permissible value",
+    "ESJ": "Calculated pasa is above permissible value",
+    "SaralJeevan": "Calculated pasa is above permissible value",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Calculated pasa is above permissible value",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Pune",
+    "City": "Pune",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010012",
+    "mobile_number": "9820010012",
+    "num_products_generated": 4,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 97625.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17008.0
+      }
+    ],
+    "num_ineligible_offers": 10,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "C2A",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "GWP",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "ESJ",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "NFL is unavailable",
+    "Physical Medical Flag": "No",
+    "C2PL": "There is an error in TEBT. Please try again!",
+    "GPP": 129271,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 400000,
+    "SanchayPlus": 665000,
+    "C2A": 350000,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 183400,
+    "SaralJeevan": 416553,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 350000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Hyderabad",
+    "City": "Hyderabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010013",
+    "mobile_number": "9820010013",
+    "num_products_generated": 8,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 129271.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 400000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 665000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 350000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 183400.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 416553.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 350000.0
+      }
+    ],
+    "num_ineligible_offers": 6,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "NFL is unavailable"
+      },
+      {
+        "product": "C2PL",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "GPP": 97028,
+    "SPP": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80",
+    "PGNP": 17776,
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Customer has a negative pincode",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Chennai",
+    "City": "Chennai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010014",
+    "mobile_number": "9820010014",
+    "num_products_generated": 4,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 97028.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17776.0
+      }
+    ],
+    "num_ineligible_offers": 10,
+    "ineligible_offers": [
+      {
+        "product": "SPP",
+        "error": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Customer has a negative pincode"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": "NFL is unavailable",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "GPP": 98359,
+    "SPP": "Mandatory field = term",
+    "PGNP": 17008,
+    "SanchayPar": 1500000,
+    "SanchayPlus": 2343750,
+    "C2A": 913542,
+    "GWP": 1875000,
+    "ESJ": 624655,
+    "SaralJeevan": 1585134,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1312500,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Ahmedabad",
+    "City": "Ahmedabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010015",
+    "mobile_number": "9820010015",
+    "num_products_generated": 10,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 98359.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17008.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 1500000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 2343750.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 913542.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 1875000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 624655.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 1585134.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1312500.0
+      }
+    ],
+    "num_ineligible_offers": 4,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "NFL is unavailable"
+      },
+      {
+        "product": "SPP",
+        "error": "Mandatory field = term"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Customer has a negative pincode",
+    "Physical Medical Flag": "No",
+    "C2PL": "Customer has a negative pincode",
+    "GPP": 97087,
+    "SPP": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80",
+    "PGNP": 17570,
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Customer has a negative pincode",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Kolkata",
+    "City": "Kolkata",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010016",
+    "mobile_number": "9820010016",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 97087.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17570.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2PL",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SPP",
+        "error": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Customer has a negative pincode"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Customer has a negative pincode",
+    "Physical Medical Flag": "No",
+    "C2PL": "Invalid request",
+    "GPP": 123604,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Customer has a negative pincode",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010017",
+    "mobile_number": "9820010017",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 123604.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2PL",
+        "error": "Invalid request"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Customer has a negative pincode"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANK",
+    "C2PSN": "Previous adversity found in Dedupe",
+    "Physical Medical Flag": "No",
+    "C2PL": "Previous adversity found in Dedupe",
+    "GPP": "Previous adversity found in Dedupe",
+    "SPP": "Previous adversity found in Dedupe",
+    "PGNP": "Previous adversity found in Dedupe",
+    "SanchayPar": "Previous adversity found in Dedupe",
+    "SanchayPlus": 9709360,
+    "C2A": "Previous adversity found in Dedupe",
+    "GWP": "Previous adversity found in Dedupe",
+    "ESJ": "Previous adversity found in Dedupe",
+    "SaralJeevan": "Previous adversity found in Dedupe",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Previous adversity found in Dedupe",
+    "ULSPRO": "Previous adversity found in Dedupe",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010018",
+    "mobile_number": "9820010018",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 9709360.0
+      }
+    ],
+    "num_ineligible_offers": 13,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "C2PL",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "GPP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SPP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "PGNP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "C2A",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "GWP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "ESJ",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Previous adversity found in Dedupe"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 97115,
+    "SPP": 150000,
+    "PGNP": 17184,
+    "SanchayPar": 1400000,
+    "SanchayPlus": 2152500,
+    "C2A": 1225000,
+    "GWP": 1750000,
+    "ESJ": 659283,
+    "SaralJeevan": 1478612,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1225000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010019",
+    "mobile_number": "9820010019",
+    "num_products_generated": 12,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 97115.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17184.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 1400000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 2152500.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 1225000.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 1750000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 659283.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 1478612.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1225000.0
+      }
+    ],
+    "num_ineligible_offers": 2,
+    "ineligible_offers": [
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANK",
+    "Campaign 1": "HBRTL",
+    "C2PSN": 5000000,
+    "Physical Medical Flag": "No",
+    "C2PL": "Previous adversity found in Dedupe",
+    "GPP": "Previous adversity found in Dedupe",
+    "SPP": "Previous adversity found in Dedupe",
+    "PGNP": "Previous adversity found in Dedupe",
+    "SanchayPar": "Previous adversity found in Dedupe",
+    "SanchayPlus": 6241920,
+    "C2A": "Previous adversity found in Dedupe",
+    "GWP": "Previous adversity found in Dedupe",
+    "ESJ": "Previous adversity found in Dedupe",
+    "SaralJeevan": "Previous adversity found in Dedupe",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Previous adversity found in Dedupe",
+    "ULSPRO": "Previous adversity found in Dedupe",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Pune",
+    "City": "Pune",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010020",
+    "mobile_number": "9820010020",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 6241920.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PL",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "GPP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SPP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "PGNP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "C2A",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "GWP",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "ESJ",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Previous adversity found in Dedupe"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Previous adversity found in Dedupe"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Calculated premium is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 97000,
+    "SPP": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80",
+    "PGNP": 17909,
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": "RL11: Final Premium Instalment should be greater than or equal to 30000",
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 54545,
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "There is an error in TEBT. Please try again!",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Hyderabad",
+    "City": "Hyderabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010021",
+    "mobile_number": "9820010021",
+    "num_products_generated": 3,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 97000.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17909.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 54545.0
+      }
+    ],
+    "num_ineligible_offers": 11,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated premium is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SPP",
+        "error": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "C2A",
+        "error": "RL11: Final Premium Instalment should be greater than or equal to 30000"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "HBRTL",
+    "C2PSN": "NFL is unavailable",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 108706,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 400000,
+    "SanchayPlus": 640000,
+    "C2A": 2333695,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 183242,
+    "SaralJeevan": 416583,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 350000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Chennai",
+    "City": "Chennai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010022",
+    "mobile_number": "9820010022",
+    "num_products_generated": 9,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 108706.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 400000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 640000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 2333695.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 183242.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 416583.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 350000.0
+      }
+    ],
+    "num_ineligible_offers": 5,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "NFL is unavailable"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": "Annual income is insufficient",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 257158,
+    "SPP": 150000,
+    "PGNP": "Frequency not allowed for this product",
+    "SanchayPar": "Annual income is insufficient",
+    "SanchayPlus": "Annual income is insufficient",
+    "C2A": "Annual income is insufficient",
+    "GWP": "Annual income is insufficient",
+    "ESJ": "Annual income is insufficient",
+    "SaralJeevan": "Annual income is insufficient",
+    "SANLP": "NML is unavailable",
+    "C2APAR": "Annual income is insufficient",
+    "ULSPRO": "Annual income is insufficient",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Ahmedabad",
+    "City": "Ahmedabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010023",
+    "mobile_number": "9820010023",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 257158.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Frequency not allowed for this product"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2A",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "GWP",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ESJ",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SANLP",
+        "error": "NML is unavailable"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Annual income is insufficient"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_IOP_NBSC",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Kolkata",
+    "City": "Kolkata",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010024",
+    "mobile_number": "9820010024",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Customer has a negative pincode",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 126340,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Customer has a negative pincode",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010025",
+    "mobile_number": "9820010025",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 126340.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Customer has a negative pincode"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_HBANK",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010026",
+    "mobile_number": "9820010026",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Customer has a negative pincode",
+    "Physical Medical Flag": "No",
+    "C2PL": "Customer has a negative pincode",
+    "GPP": 121070,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Customer has a negative pincode",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010027",
+    "mobile_number": "9820010027",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 121070.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2PL",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Customer has a negative pincode"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": "NFL is unavailable",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 121070,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 400000,
+    "SanchayPlus": 650000,
+    "C2A": 350000,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 183409,
+    "SaralJeevan": 416631,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 350000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Pune",
+    "City": "Pune",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010028",
+    "mobile_number": "9820010028",
+    "num_products_generated": 9,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 121070.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 400000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 650000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 350000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 183409.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 416631.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 350000.0
+      }
+    ],
+    "num_ineligible_offers": 5,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "NFL is unavailable"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "HBRTL",
+    "C2PSN": "Credit score is below permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 112593,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 1500000,
+    "SanchayPlus": 2418750,
+    "C2A": 1312500,
+    "GWP": 1875000,
+    "ESJ": 712415,
+    "SaralJeevan": 1586909,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1312500,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Hyderabad",
+    "City": "Hyderabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010029",
+    "mobile_number": "9820010029",
+    "num_products_generated": 10,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 112593.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 1500000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 2418750.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 1312500.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 1875000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 712415.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 1586909.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1312500.0
+      }
+    ],
+    "num_ineligible_offers": 4,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Credit score is below permissible value"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 126340,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 400000,
+    "SanchayPlus": "There is an error in TEBT. Please try again!",
+    "C2A": 350000,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 183410,
+    "SaralJeevan": 416646,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 350000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Chennai",
+    "City": "Chennai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010030",
+    "mobile_number": "9820010030",
+    "num_products_generated": 9,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 126340.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 400000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 350000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 183410.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 416646.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 350000.0
+      }
+    ],
+    "num_ineligible_offers": 5,
+    "ineligible_offers": [
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Profile does not meet the product criteria",
+    "C2PL": "Annual income is insufficient",
+    "GPP": "Profile does not meet the product criteria",
+    "SPP": "Profile does not meet the product criteria",
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": "Profile does not meet the product criteria",
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": "Profile does not meet the product criteria",
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Profile does not meet the product criteria",
+    "ULSPRO": "Profile does not meet the product criteria",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Ahmedabad",
+    "City": "Ahmedabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010031",
+    "mobile_number": "9820010031",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 14,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "GPP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SPP",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "C2A",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "ESJ",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Profile does not meet the product criteria"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Profile does not meet the product criteria"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_IOP_NBSC",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Kolkata",
+    "City": "Kolkata",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010032",
+    "mobile_number": "9820010032",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "PAN": "FXUPS257K",
+    "Campaign 1": "H",
+    "C2PSN": "Calculated premium is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 97625,
+    "SPP": 150000,
+    "PGNP": "Frequency not allowed for this product",
+    "SanchayPar": "Annual income is insufficient",
+    "SanchayPlus": "Annual income is insufficient",
+    "C2A": "Annual income is insufficient",
+    "GWP": "Annual income is insufficient",
+    "ESJ": "Annual income is insufficient",
+    "SaralJeevan": "Annual income is insufficient",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Annual income is insufficient",
+    "ULSPRO": "Annual income is insufficient",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010033",
+    "mobile_number": "9820010033",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 97625.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated premium is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Frequency not allowed for this product"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2A",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "GWP",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ESJ",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Annual income is insufficient"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Calculated premium is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 102817,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": "RL11: Final Premium Instalment should be greater than or equal to 30000",
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 54915,
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "There is an error in TEBT. Please try again!",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010034",
+    "mobile_number": "9820010034",
+    "num_products_generated": 3,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 102817.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 54915.0
+      }
+    ],
+    "num_ineligible_offers": 11,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated premium is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "C2A",
+        "error": "RL11: Final Premium Instalment should be greater than or equal to 30000"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "H",
+    "C2PSN": "Annual income is insufficient",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 123604,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Annual income is insufficient",
+    "SanchayPlus": 2500000,
+    "C2A": "Annual income is insufficient",
+    "GWP": "Annual income is insufficient",
+    "ESJ": "Annual income is insufficient",
+    "SaralJeevan": "Annual income is insufficient",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Annual income is insufficient",
+    "ULSPRO": "Annual income is insufficient",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010035",
+    "mobile_number": "9820010035",
+    "num_products_generated": 3,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 123604.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 2500000.0
+      }
+    ],
+    "num_ineligible_offers": 11,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "C2A",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "GWP",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ESJ",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Annual income is insufficient"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "HBQ",
+    "C2PSN": "Customer has a negative pincode",
+    "Physical Medical Flag": "No",
+    "C2PL": "Customer has a negative pincode",
+    "GPP": 105389,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Customer has a negative pincode",
+    "SanchayPlus": "Customer has a negative pincode",
+    "C2A": "Customer has a negative pincode",
+    "GWP": "Customer has a negative pincode",
+    "ESJ": "Customer has a negative pincode",
+    "SaralJeevan": "Customer has a negative pincode",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Customer has a negative pincode",
+    "ULSPRO": "Customer has a negative pincode",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Pune",
+    "City": "Pune",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010036",
+    "mobile_number": "9820010036",
+    "num_products_generated": 2,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 105389.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      }
+    ],
+    "num_ineligible_offers": 12,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2PL",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "C2A",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "GWP",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ESJ",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Customer has a negative pincode"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Customer has a negative pincode"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "NFL is unavailable",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "GPP": 97087,
+    "SPP": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80",
+    "PGNP": 17274,
+    "SanchayPar": 400000,
+    "SanchayPlus": 595000,
+    "C2A": 350000,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 182203,
+    "SaralJeevan": 415334,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 350000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Hyderabad",
+    "City": "Hyderabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010037",
+    "mobile_number": "9820010037",
+    "num_products_generated": 9,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 97087.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17274.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 400000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 595000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 350000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 182203.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 415334.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 350000.0
+      }
+    ],
+    "num_ineligible_offers": 5,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "NFL is unavailable"
+      },
+      {
+        "product": "SPP",
+        "error": "Term above 40 is not allowed for the Maturity/Vesting age range from 30 to 80"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Calculated pasa is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 108706,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": "RL11: Final Premium Instalment should be greater than or equal to 30000",
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 54973,
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "There is an error in TEBT. Please try again!",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Chennai",
+    "City": "Chennai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010038",
+    "mobile_number": "9820010038",
+    "num_products_generated": 3,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 108706.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 54973.0
+      }
+    ],
+    "num_ineligible_offers": 11,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "C2A",
+        "error": "RL11: Final Premium Instalment should be greater than or equal to 30000"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Calculated pasa is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 121070,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": "RL11: Final Premium Instalment should be greater than or equal to 30000",
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 55023,
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "There is an error in TEBT. Please try again!",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Ahmedabad",
+    "City": "Ahmedabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010039",
+    "mobile_number": "9820010039",
+    "num_products_generated": 3,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 121070.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 55023.0
+      }
+    ],
+    "num_ineligible_offers": 11,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated pasa is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "C2A",
+        "error": "RL11: Final Premium Instalment should be greater than or equal to 30000"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Campaign 1": "HBRTL",
+    "C2PSN": "Credit score is below permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 105389,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 2000000,
+    "SanchayPlus": 7710720,
+    "C2A": 1750000,
+    "GWP": 2500000,
+    "ESJ": 948962,
+    "SaralJeevan": 2114325,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1750000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Kolkata",
+    "City": "Kolkata",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010040",
+    "mobile_number": "9820010040",
+    "num_products_generated": 10,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 105389.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 2000000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 7710720.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 1750000.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 2500000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 948962.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 2114325.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1750000.0
+      }
+    ],
+    "num_ineligible_offers": 4,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Credit score is below permissible value"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 269109,
+    "SPP": 150000,
+    "PGNP": 18295,
+    "SanchayPar": 5399600,
+    "SanchayPlus": 6704290,
+    "C2A": 2336985,
+    "GWP": 5480000,
+    "ESJ": 2766871,
+    "SaralJeevan": 7696034,
+    "SANLP": 950600,
+    "C2APAR": 7000000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010041",
+    "mobile_number": "9820010041",
+    "num_products_generated": 13,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 269109.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 18295.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 5399600.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 6704290.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 2336985.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 5480000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 2766871.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 7696034.0
+      },
+      {
+        "product": "SANLP",
+        "sum_assured": 950600.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 7000000.0
+      }
+    ],
+    "num_ineligible_offers": 1,
+    "ineligible_offers": [
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_HBANK",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010042",
+    "mobile_number": "9820010042",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 123604,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 3600000,
+    "SanchayPlus": 5895000,
+    "C2A": 3104271,
+    "GWP": 4500000,
+    "ESJ": 1550313,
+    "SaralJeevan": 3806808,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 3150000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010043",
+    "mobile_number": "9820010043",
+    "num_products_generated": 10,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 123604.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 3600000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 5895000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 3104271.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 4500000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 1550313.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 3806808.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 3150000.0
+      }
+    ],
+    "num_ineligible_offers": 3,
+    "ineligible_offers": [
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Pune",
+    "City": "Pune",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010044",
+    "mobile_number": "9820010044",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_HBANK",
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Hyderabad",
+    "City": "Hyderabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010045",
+    "mobile_number": "9820010045",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "RTL_IOP_NBSC",
+    "Campaign 1": "HBRTL",
+    "C2PSN": 5000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 5000000,
+    "GPP": 121070,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": 1500000,
+    "SanchayPlus": 2437500,
+    "C2A": 1558982,
+    "GWP": 1875000,
+    "ESJ": 712370,
+    "SaralJeevan": 1586141,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1312500,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Chennai",
+    "City": "Chennai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010046",
+    "mobile_number": "9820010046",
+    "num_products_generated": 11,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 5000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 121070.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 1500000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 2437500.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 1558982.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 1875000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 712370.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 1586141.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1312500.0
+      }
+    ],
+    "num_ineligible_offers": 3,
+    "ineligible_offers": [
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Ahmedabad",
+    "City": "Ahmedabad",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010047",
+    "mobile_number": "9820010047",
+    "num_products_generated": 1,
+    "products_generated": [
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      }
+    ],
+    "num_ineligible_offers": 0,
+    "ineligible_offers": []
+  },
+  {
+    "UserId": "[unreadable]",
+    "Status": "JOURNEY_ACTIVE",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Income has a declining trend",
+    "C2PL": "Income has a declining trend",
+    "GPP": "Income has a declining trend",
+    "SPP": "Income has a declining trend",
+    "PGNP": "Income has a declining trend",
+    "SanchayPar": "Income has a declining trend",
+    "SanchayPlus": "Income has a declining trend",
+    "C2A": "Income has a declining trend",
+    "GWP": "Income has a declining trend",
+    "ESJ": "Income has a declining trend",
+    "SaralJeevan": "Income has a declining trend",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "Income has a declining trend",
+    "ULSPRO": "Income has a declining trend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Kolkata",
+    "City": "Kolkata",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010048",
+    "mobile_number": "9820010048",
+    "num_products_generated": 0,
+    "products_generated": [],
+    "num_ineligible_offers": 14,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "C2PL",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "GPP",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "SPP",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "PGNP",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "C2A",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "GWP",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "ESJ",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "Income has a declining trend"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Income has a declining trend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Calculated premium is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 112593,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": 3289800,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 54998,
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "There is an error in TEBT. Please try again!",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Mumbai",
+    "City": "Mumbai",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010049",
+    "mobile_number": "9820010049",
+    "num_products_generated": 4,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 112593.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 3289800.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 54998.0
+      }
+    ],
+    "num_ineligible_offers": 10,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated premium is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": "Calculated premium is above permissible value",
+    "Physical Medical Flag": "No",
+    "C2PL": "Annual income is insufficient",
+    "GPP": 132413,
+    "SPP": 150000,
+    "PGNP": "Specified age is beyond limits",
+    "SanchayPar": "Calculated Sum assured amount is less than the minimum allowed 300000",
+    "SanchayPlus": "Please provide premium amount more than minimum premium 30000",
+    "C2A": 3013330,
+    "GWP": "Please provide premium amount more than minimum premium 75000",
+    "ESJ": 55017,
+    "SaralJeevan": "Internal Server Error",
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": "There is an error in TEBT. Please try again!",
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Bengaluru",
+    "City": "Bengaluru",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010050",
+    "mobile_number": "9820010050",
+    "num_products_generated": 4,
+    "products_generated": [
+      {
+        "product": "GPP",
+        "sum_assured": 132413.0
+      },
+      {
+        "product": "SPP",
+        "sum_assured": 150000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 3013330.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 55017.0
+      }
+    ],
+    "num_ineligible_offers": 10,
+    "ineligible_offers": [
+      {
+        "product": "C2PSN",
+        "error": "Calculated premium is above permissible value"
+      },
+      {
+        "product": "C2PL",
+        "error": "Annual income is insufficient"
+      },
+      {
+        "product": "PGNP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "SanchayPar",
+        "error": "Calculated Sum assured amount is less than the minimum allowed 300000"
+      },
+      {
+        "product": "SanchayPlus",
+        "error": "Please provide premium amount more than minimum premium 30000"
+      },
+      {
+        "product": "GWP",
+        "error": "Please provide premium amount more than minimum premium 75000"
+      },
+      {
+        "product": "SaralJeevan",
+        "error": "Internal Server Error"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "C2APAR",
+        "error": "There is an error in TEBT. Please try again!"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  },
+  {
+    "UserId": "[unreadable]",
+    "Is Offer Generated": 1.0,
+    "Status": "Offer Created",
+    "ExtSessionId": "[truncated: HDFC_LIFE-HLOGIN-\u2026]",
+    "source": "HBANKOM",
+    "C2PSN": 10000000,
+    "Physical Medical Flag": "No",
+    "C2PL": 10000000,
+    "GPP": 98359,
+    "SPP": "Mandatory field = term",
+    "PGNP": 17008,
+    "SanchayPar": 2000000,
+    "SanchayPlus": 3125000,
+    "C2A": 1750000,
+    "GWP": 2500000,
+    "ESJ": 947904,
+    "SaralJeevan": 2113512,
+    "SANLP": "Specified age is beyond limits",
+    "C2APAR": 1750000,
+    "ULSPRO": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend",
+    "Updated": "2026-10-26 00:00:00",
+    "Location": "Delhi",
+    "City": "Delhi",
+    "Age_Group": "Unknown",
+    "Phone No": "9820010051",
+    "mobile_number": "9820010051",
+    "num_products_generated": 11,
+    "products_generated": [
+      {
+        "product": "C2PSN",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "C2PL",
+        "sum_assured": 10000000.0
+      },
+      {
+        "product": "GPP",
+        "sum_assured": 98359.0
+      },
+      {
+        "product": "PGNP",
+        "sum_assured": 17008.0
+      },
+      {
+        "product": "SanchayPar",
+        "sum_assured": 2000000.0
+      },
+      {
+        "product": "SanchayPlus",
+        "sum_assured": 3125000.0
+      },
+      {
+        "product": "C2A",
+        "sum_assured": 1750000.0
+      },
+      {
+        "product": "GWP",
+        "sum_assured": 2500000.0
+      },
+      {
+        "product": "ESJ",
+        "sum_assured": 947904.0
+      },
+      {
+        "product": "SaralJeevan",
+        "sum_assured": 2113512.0
+      },
+      {
+        "product": "C2APAR",
+        "sum_assured": 1750000.0
+      }
+    ],
+    "num_ineligible_offers": 3,
+    "ineligible_offers": [
+      {
+        "product": "SPP",
+        "error": "Mandatory field = term"
+      },
+      {
+        "product": "SANLP",
+        "error": "Specified age is beyond limits"
+      },
+      {
+        "product": "ULSPRO",
+        "error": "Instance Value Dividend Leaders Advantage Fund Top 200 Equal Weight Fund not found in enum Diversified Equity Fund Bond Fund Discovery Fund Equity Advantage Fund Sustainable Equity Fund Flexi Cap Fund Dividend"
+      }
+    ]
+  }
+]
